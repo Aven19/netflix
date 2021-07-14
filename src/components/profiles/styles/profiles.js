@@ -1,4 +1,4 @@
-import styled from "styled-components/macro";
+import styled from 'styled-components/macro';
 
 export const Container = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
   width: 100%;
-  color: white;
+  color: #fff;
   font-size: 48px;
   text-align: center;
   font-weight: 500;
@@ -28,6 +28,7 @@ export const Name = styled.p`
   color: #808080;
   text-overflow: ellipsis;
   font-size: 16px;
+
   &:hover {
     font-weight: bold;
     color: #e5e5e5;
@@ -44,17 +45,20 @@ export const Picture = styled.img`
 
 export const Item = styled.li`
   max-height: 200px;
-  mnax-width: 200px;
+  max-width: 200px;
   list-style-type: none;
   text-align: center;
   margin-right: 30px;
+
   &:hover > ${Picture} {
     border: 3px solid white;
   }
-  &:hover > ${Name} {
+
+  &:hover ${Name} {
     font-weight: bold;
     color: white;
   }
+
   &:last-of-type {
     margin-right: 0;
   }
